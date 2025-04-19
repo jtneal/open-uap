@@ -3,10 +3,10 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   imports: [RouterModule],
-  selector: 'app-about',
+  selector: 'app-submit',
   template: `
     <article>
-      <h2>About</h2>
+      <h2>Submit</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula
         velit sapien, in pellentesque ipsum elementum non. Integer tempus dui
@@ -62,4 +62,4 @@ import { RouterModule } from '@angular/router';
     </article>
   `,
 })
-export class AboutComponent {}
+export class SubmitComponent {} 

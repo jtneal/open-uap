@@ -6,6 +6,11 @@ import { HeaderComponent } from './header.component';
 @Component({
   imports: [FooterComponent, HeaderComponent, RouterModule],
   selector: 'app-root',
+  styles: `
+    main {
+      padding: 1.5rem 0;
+    }
+  `,
   template: `
     <app-header></app-header>
     <main>
