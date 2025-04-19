@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'lib-ui-home',
-  imports: [CommonModule],
   templateUrl: './ui-home.component.html',
-  styleUrl: './ui-home.component.scss',
+  styleUrls: ['./ui-home.component.scss'],
+  standalone: true,
+  imports: [CommonModule]
 })
 export class UiHomeComponent {}

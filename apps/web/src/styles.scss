@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body {
+  color: #f2f2f2;
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-image: url('/images/stars.jpg');
+  background-size: cover;
+  background-position: top center;
+  padding: 1.2rem 1.5rem;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 0 !important;
+}
+
+h2 {
+  color: rgba(0, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.5rem 0 0 !important;
+}
+
+p.legal {
+  color: #ccc;
+  font-size: 0.8rem;
+  margin: 0 !important;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #0ff;
+  }
+}
