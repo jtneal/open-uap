@@ -8,6 +8,6 @@ export class AppService {
   constructor(@InjectRepository(Report) private readonly repo: Repository<Report>) {}
 
   getRecentReports(): Promise<Report[]> {
-    return this.repo.find();
+    return this.repo.find({ order: { sightingDate: 'DESC' }, take: 100 });
   }
 }
