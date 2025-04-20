@@ -26,10 +26,13 @@ import { CommonModule } from '@angular/common';
   ],
   styles: `
     :host {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+      border: 2px dashed rgba(0, 255, 255, 0.5) !important;
+      border-radius: 12px;
       display: block;
       max-width: 600px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 1.5rem 2rem 2rem;
     }
 
     form {
@@ -55,7 +58,6 @@ import { CommonModule } from '@angular/common';
       display: flex;
       justify-content: flex-end;
       gap: 1rem;
-      margin-top: 1rem;
     }
 
     .mat-mdc-card {
@@ -94,7 +96,7 @@ import { CommonModule } from '@angular/common';
     }
   `,
   template: `
-    <h2>Report a UFO Sighting</h2>
+    <h3>Report a UAP Sighting</h3>
     <form [formGroup]="reportForm" (ngSubmit)="onSubmit()">
       <div class="form-row">
         <mat-form-field>
@@ -189,6 +191,10 @@ import { CommonModule } from '@angular/common';
           </mat-error>
         }
       </mat-form-field>
+
+      <!-- Upload file - photo, video, etc. -->
+      <!-- Start date, end date, start time, end time, defaults to same day/time? -->
+      <!-- Research other fields that might be relevant -->
 
       <div class="actions">
         <button mat-button type="button" (click)="resetForm()">Clear</button>

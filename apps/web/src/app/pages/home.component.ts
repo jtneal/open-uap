@@ -59,10 +59,10 @@ import { CardComponent } from './card.component';
         </p>
       </app-card>
 
-      <app-card title="Submit" ctaLink="/report" cta="Report Sighting">
+      <app-card title="Submit" ctaLink="/submit" cta="Read More">
         <p>
-          Have you witnessed something unexplainable in the sky? Share your UFO sighting 
-          experience with our community and contribute to our growing database of encounters.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </app-card>
 

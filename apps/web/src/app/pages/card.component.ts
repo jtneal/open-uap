@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
     .mat-mdc-card {
       background-color: rgba(0, 0, 0, 0.5) !important;
       border: 2px dashed rgba(0, 255, 255, 0.5) !important;
+      border-radius: 12px;
       color: #eee;
 
       p {
