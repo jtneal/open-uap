@@ -15,19 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@open-uap/data-access-home": ["libs/web/home/data-access/src/index.ts"],
-      "@open-uap/data-access-search": ["libs/web/search/data-access/src/index.ts"],
-      "@open-uap/data-access-submit": ["libs/web/submit/data-access/src/index.ts"],
-      "@open-uap/dtos": ["libs/common/dtos/src/index.ts"],
-      "@open-uap/feature-home": ["libs/web/home/feature/src/index.ts"],
-      "@open-uap/feature-search": ["libs/web/search/feature/src/index.ts"],
-      "@open-uap/feature-submit": ["libs/web/submit/feature/src/index.ts"],
-      "@open-uap/ui-home": ["libs/web/home/ui/src/index.ts"],
-      "@open-uap/ui-search": ["libs/web/search/ui/src/index.ts"],
-      "@open-uap/ui-submit": ["libs/web/submit/ui/src/index.ts"],
-      "@open-uap/util-home": ["libs/web/home/util/src/index.ts"],
-      "@open-uap/util-search": ["libs/web/search/util/src/index.ts"],
-      "@open-uap/util-submit": ["libs/web/submit/util/src/index.ts"]
+      "@open-uap/dtos": ["libs/common/dtos/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

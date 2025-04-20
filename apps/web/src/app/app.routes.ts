@@ -1,14 +1,14 @@
 import { Route } from '@angular/router';
-import { UiHomeComponent } from '@open-uap/ui-home';
-import { AboutComponent } from './about.component';
-import { SearchComponent } from './search.component';
-import { SubmitComponent } from './submit.component';
-import { AdviceComponent } from './advice.component';
-import { DevelopersComponent } from './developers.component';
-import { ContactComponent } from './contact.component';
+import { AboutComponent } from './pages/about.component';
+import { AdviceComponent } from './pages/advice.component';
+import { ContactComponent } from './pages/contact.component';
+import { DevelopersComponent } from './pages/developers.component';
+import { HomeComponent } from './pages/home.component';
+import { SearchComponent } from './pages/search.component';
+import { SubmitComponent } from './pages/submit.component';
 
 export const appRoutes: Route[] = [
-  { path: '', component: UiHomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'search', component: SearchComponent },
   { path: 'submit', component: SubmitComponent },

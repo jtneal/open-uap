@@ -26,8 +26,7 @@ import { RouterModule } from '@angular/router';
     }
 
     .legal {
-      border-top: 1px dotted rgba(0, 255, 255, 0.75);
-      font-size: 0.8rem;
+      border-top: 6px dashed rgba(0, 255, 255, 0.5);
       margin-top: 1.5rem !important;
       padding: 1.5rem 0;
       text-align: center;
