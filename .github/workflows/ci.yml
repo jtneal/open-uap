@@ -54,7 +54,7 @@ jobs:
       - run: npm ci
       
       - name: Build for GitHub Pages
-        run: npx nx build web --base-href="/${{ github.event.repository.name }}/"
+        run: npx nx build web
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
