@@ -1,16 +1,31 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { CardComponent } from './card.component';
+
 @Component({
-  imports: [GoogleMapsModule, RouterModule],
+  imports: [GoogleMapsModule, RouterModule, CardComponent],
   selector: 'app-home',
   styles: `
     .map-container {
       border-radius: 16px;
+      margin-top: 1.5rem;
       overflow: hidden;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 1.5rem;
+
+      app-card {
+        flex: 1 0 calc(50% - 16px);
+      }
     }
   `,
   template: `
+    <h2>Recent Sightings</h2>
     <div class="map-container">
       <google-map
         [center]="center"
@@ -27,6 +42,53 @@ import { GoogleMapsModule } from '@angular/google-maps';
         }
       </google-map>
     </div>
+
+    <section class="cards-container">
+
+      <app-card title="About" ctaLink="/about" cta="Read More">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </app-card>
+
+      <app-card title="Search" ctaLink="/search" cta="Read More">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </app-card>
+
+      <app-card title="Submit" ctaLink="/report" cta="Report Sighting">
+        <p>
+          Have you witnessed something unexplainable in the sky? Share your UFO sighting 
+          experience with our community and contribute to our growing database of encounters.
+        </p>
+      </app-card>
+
+      <app-card title="Advice" ctaLink="/advice" cta="Read More">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </app-card>
+
+      <app-card title="Developers" ctaLink="/developers" cta="Read More">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </app-card>
+
+      <app-card title="Contact" ctaLink="/contact" cta="Read More">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </app-card>
+    </section>
+
+    <!-- UFOs in the news -->
   `,
 })
 export class HomeComponent {

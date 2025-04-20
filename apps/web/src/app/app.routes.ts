@@ -6,6 +6,7 @@ import { DevelopersComponent } from './pages/developers.component';
 import { HomeComponent } from './pages/home.component';
 import { SearchComponent } from './pages/search.component';
 import { SubmitComponent } from './pages/submit.component';
+import { ReportFormComponent } from './pages/report-form.component';
 
 export const appRoutes: Route[] = [
   { path: '', component: HomeComponent },
@@ -15,4 +16,5 @@ export const appRoutes: Route[] = [
   { path: 'advice', component: AdviceComponent },
   { path: 'developers', component: DevelopersComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'report', component: ReportFormComponent },
 ];
