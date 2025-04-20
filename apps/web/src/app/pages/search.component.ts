@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { CommonModule } from '@angular/common';
 import { map, Observable, startWith } from 'rxjs';
-import { CardComponent } from './card.component';
+import { CardComponent } from '../card.component';
 
 @Component({
   selector: 'app-search',

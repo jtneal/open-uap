@@ -7,6 +7,12 @@ import { HeaderComponent } from './header.component';
   imports: [FooterComponent, HeaderComponent, RouterModule],
   selector: 'app-root',
   styles: `
+    :host {
+      display: block;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
     main {
       padding: 1.5rem 0;
     }

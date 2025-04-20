@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { CardComponent } from './card.component';
+import { CardComponent } from '../card.component';
 
 @Component({
   imports: [GoogleMapsModule, RouterModule, CardComponent],
