@@ -10,13 +10,27 @@ import { RouterModule } from '@angular/router';
       border-top: 6px dashed rgba(0, 255, 255, 0.5);
       display: flex;
       justify-content: space-between;
-      padding: 1.2rem 0;
+      padding-top: 1.5rem;
+
+      h1 {
+        width: 150px;
+      }
 
       ul {
         display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
         font-size: 1rem;
         gap: 1.5rem;
       }
+    }
+
+    .legal {
+      border-top: 1px dotted rgba(0, 255, 255, 0.75);
+      font-size: 0.8rem;
+      margin-top: 1.5rem !important;
+      padding: 1.5rem 0;
+      text-align: center;
     }
   `,
   template: `
@@ -34,7 +48,10 @@ import { RouterModule } from '@angular/router';
           </ul>
         </nav>
       </section>
+      <p class="legal">Copyright &copy; {{ year }} open-uap. All rights reserved.</p>
     </footer>
   `,
 })
-export class FooterComponent {}
+export class FooterComponent {
+  year = new Date().getFullYear();
+}
