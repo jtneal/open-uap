@@ -35,9 +35,11 @@ import { RouterModule } from '@angular/router';
       <mat-card-content>
         <ng-content></ng-content>
       </mat-card-content>
-      <mat-card-actions>
-        <a [routerLink]="ctaLink()" mat-button>{{ cta() }}</a>
-      </mat-card-actions>
+      @if (ctaLink()) {
+        <mat-card-actions>
+          <a [routerLink]="ctaLink()" mat-button>{{ cta() }}</a>
+        </mat-card-actions>
+      }
     </mat-card>
   `
 })
