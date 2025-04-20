@@ -77,6 +77,21 @@ import { CommonModule } from '@angular/common';
     .mat-mdc-card-actions {
       padding: 16px !important;
     }
+
+    .mat-mdc-raised-button {
+      background-color: #0ff !important;
+      color: #111 !important;
+      transition: background-color 0.3s ease;
+
+      &:disabled {
+        background-color: #ccc !important;
+        color: #666 !important;
+      }
+
+      &:hover {
+        background-color: #0ee !important;
+      }
+    }
   `,
   template: `
     <h2>Report a UFO Sighting</h2>
