@@ -230,4 +230,4 @@ export class ReportFormComponent {
   resetForm() {
     this.reportForm.reset();
   }
-} 
+}
