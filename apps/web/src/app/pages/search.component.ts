@@ -100,8 +100,7 @@ import { CardComponent } from './card.component';
   `,
   template: `
     <h2>Search</h2>
-    <app-card>
-      <h3>Search UAP Sightings</h3>
+    <app-card title="Search UAP Sightings">
       <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
         <div class="form-row">
           <mat-form-field>

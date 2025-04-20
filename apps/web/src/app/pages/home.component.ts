@@ -23,6 +23,10 @@ import { CardComponent } from './card.component';
         flex: 1 0 calc(50% - 16px);
       }
     }
+
+    p {
+      margin-top: 0 !important;
+    }
   `,
   template: `
     <h2>Recent Sightings</h2>

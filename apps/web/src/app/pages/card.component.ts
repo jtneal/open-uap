@@ -13,8 +13,8 @@ import { RouterModule } from '@angular/router';
       border-radius: 12px;
       color: #eee;
 
-      p {
-        margin-top: 8px !important;
+      mat-card-header {
+        margin-bottom: 1.5rem;
       }
     }
 
