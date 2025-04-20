@@ -70,17 +70,17 @@ export class HomeComponent {
       {
         featureType: 'all',
         elementType: 'labels.text.stroke',
-        stylers: [{ color: '#242f3e' }]
+        stylers: [{ color: '#111111' }]
       },
       {
         featureType: 'all',
         elementType: 'labels.text.fill',
-        stylers: [{ color: '#746855' }]
+        stylers: [{ color: '#888888' }]
       },
       {
         featureType: 'water',
         elementType: 'geometry',
-        stylers: [{ color: '#000' }]
+        stylers: [{ color: '#000000' }]
       }
     ]
   };
