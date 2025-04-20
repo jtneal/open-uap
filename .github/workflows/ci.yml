@@ -55,6 +55,9 @@ jobs:
       
       - name: Build for GitHub Pages
         run: npx nx build web
+
+      - name: Fix deep links/refreshing
+        run: cp dist/apps/web/browser/index.html dist/apps/web/browser/404.html
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
