@@ -27,7 +27,7 @@ import { CardComponent } from '../card.component';
     MatAutocompleteModule
   ],
   styles: `
-    :host {
+    app-card {
       display: block;
       max-width: 768px;
       margin: 0 auto;
